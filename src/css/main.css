@@ -142,13 +142,13 @@ body {
 	margin-top: -6rem;
 	color: var(--secondary-color);
 	text-align: center;
+	margin-bottom: 3.875rem;
 
 }
 
 .intro .intro__box {}
 
 .intro__bg {
-
 	width: 100%;
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.3);
@@ -187,4 +187,79 @@ body {
 
 }
 
-.intro .intro__btn {}
+.box {}
+
+.section {
+	margin-bottom: 6.25rem;
+}
+
+.section .section__hdl {
+	text-align: center;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 2.1875rem;
+	position: relative;
+}
+
+.section .section__hdl:before,
+.section .section__hdl:after {
+	content: '';
+	width: 50px;
+	height: 3px;
+	display: inline-block;
+	background-color: var(--primary-color);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 0.625rem;
+}
+
+.section .section__hdl:before {
+	margin-left: -0.625rem;
+	transform: translateY(-50%) translateX(-100%);
+
+}
+
+.section .section__hdl--ternary {
+	text-align: left;
+	text-transform: uppercase;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 1.1875rem;
+	color: rgb(106, 106, 106);
+	margin-bottom: 1.25rem;
+
+}
+
+.section .section__box {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.section .section__col {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.section .section__img {
+	width: 100%;
+	display: block;
+	margin-bottom: 0.5625rem;
+}
+
+.section .section__text {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+
+	font-size: 0.875rem;
+	color: rgb(106, 106, 106);
+
+	line-height: 1.357;
+	max-width: 16.25rem;
+	margin-bottom: 1rem;
+	margin-top: 0;
+}
